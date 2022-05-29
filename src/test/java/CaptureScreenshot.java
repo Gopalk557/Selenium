@@ -22,9 +22,13 @@ public class CaptureScreenshot
             FileHandler.copy(takesScreenshot.getScreenshotAs(OutputType.FILE),
                     new File("D:\\CFP Automation\\Selenium\\Screenshot\\screenshot_"
                             +System.currentTimeMillis()+".png"));
-        } catch (WebDriverException e) {
+        }
+        catch (WebDriverException e)
+        {
 
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
 
         }
         Thread.sleep(2000);
