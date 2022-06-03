@@ -15,7 +15,7 @@ public class IsSelected
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.facebook.com");
+        driver.get("https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles");
         WebElement password = driver.findElement(By.name("pass"));
         password.click();
         if (password.isSelected())
