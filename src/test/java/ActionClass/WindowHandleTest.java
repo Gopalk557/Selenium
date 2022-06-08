@@ -64,11 +64,9 @@ public class WindowHandleTest
     System.out.println("Number of browser windows opened on the system is : "+ count);
     for (String windowHandle : allWindowHandles)
       {
-//switch to each browser window
         driver.switchTo().window(windowHandle);
         String title = driver.getTitle();
-/* compare the window id of all the browsers with the Parent browser window id, if it
-is not equal, then only close the browser windows.*/
+
         if (!windowHandle.equals(parentWindowhandleID))
         {
             driver.close();
